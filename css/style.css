@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'body';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'body';
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #D89B4E;
+}
+
+
+header p {
+    margin: 0px 15px;
+    font-size: 25px;
+    padding-top: 15px;
+    float: left;
+    color: white;
+}
+
+header i {
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-left: 15px;
+    margin-top: 5px;
+    color: #B3B3B3;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+#footerSection {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/*footer styling -  below is the css for the footer div. copy from here*/
+#footer {
+    width: 100%;
+    height: 337px;
+    background: #212121;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+.footerInnerContainer {
+    width: 1100px;
+    height: 337px;
+}
+
+.footerInnerContainer h2 {
+    color: white;
+    font-weight: lighter;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+
+.footerInnerContainer p {
+    margin-left: 0px;
+}
+
+.footerQaelo,
+.footerCompany,
+.footerServices,
+.footerAccount {
+    float: left;
+    text-align: left;
+}
+
+.footerCompany,
+.footerServices,
+.footerAccount {
+    margin-left: 140px;
+}
+
+
+#footer hr {
+    width: 100%;
+    float: left;
+    margin-top: 17px;
+    border: 0.1px solid gray;
+}
+
+
+.footerCopyright {
+    width: 100%;
+    float: left;
+}
+
+.footerCopyright p {
+    float: left;
+    margin-top: 13px;
+    font-size: 12px;
+}
+
+.footerCopyright div {
+    float: right;
+}
+
+.footerCopyright i {
+    color: #D89B4E;
+    padding: 10px;
+    border-radius: 0;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width:1100px) {
+
+    #footer,
+    .footerInnerContainer {
+        height: 1000px;
+        width: 100%;
+    }
+
+    .footerCopyright div,
+    #footer hr,
+    .footerCopyright p {
+        float: none;
+    }
+
+    #footer hr {
+        border: 0.3px solid gray;
+    }
+
+    .footerQaelo,
+    .footerCompany,
+    .footerServices,
+    .footerAccount {
+        float: none;
+        margin-left: 40px;
+    }
+}
+
+/*end footer styling. copy till here*/
+
+
+#imageUploadSection h1,
+#imageUploadSection p {
+    text-align: left;
+}
+
+
+
+/*below is the styling for the upload button - option number 1*/
+#imageUploadSection {
+    width: 100%;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+
+#uploadBtnOpt1 {
+    width: 612px;
+    height: 310px;
+    border: 3px dotted rgba(179, 179, 179, 0.1411764705882353);
+    border-radius: 2px;
+    background: #F9FAFB;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+#uploadBtnOpt1 i {
+    color: #B3B3B3;
+    opacity: 0.56;
+    font-size: 83px;
+    margin-top: 95px;
+    position: absolute;
+    margin-left: 271px;
+}
+
+#uploadBtnOpt1 p {
+    position: absolute;
+    margin-top: 196px;
+    margin-left: 188px;
+}
+
+#uploadBtnOpt1 input {
+    float: left;
+    height: 310px;
+    cursor: pointer;
+    width: 612px;
+    opacity: 0;
+}
+
+@media (max-width:800px) {
+
+    #uploadBtnOpt1,
+    #uploadBtnOpt1 input {
+        width: 300px;
+        height: 300px;
+    }
+
+    #uploadBtnOpt1 i {
+        margin-left: 120px;
+    }
+
+    #uploadBtnOpt1 p {
+        margin-left: 15px;
+    }
+}
+
+/*option 1 upload button - copy till here*/
+
+
+
+#uploadBtnOpt2 {
+    width: 100%;
+    height: 600px;
+    background: rgba(239, 239, 233, 0.23921568627450981);
+    padding-top: 20px;
+}
+
+/*below is the styling for the upload button - option 2. copy from here*/
+.uploadContOption2 {
+    width: 612px;
+    height: 580px;
+    background: white;
+}
+
+
+.uploadBtn {
+    width: 150px;
+    height: 150px;
+    background: #f9fafb;
+    border: 3px dotted rgba(179, 179, 179, 0.1411764705882353);
+    float: left;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+
+.uploadBtn input {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.uploadBtn i {
+    position: absolute;
+    font-size: 35px;
+    color: #B3B3B3;
+    opacity: 0.56;
+    margin-left: 55px;
+    margin-top: 45px;
+}
+
+.uploadBtn #uploadPrompt {
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 83px;
+}
+
+
+@media (max-width:800px){
+    .uploadContOption2{
+        width: auto;
+        height: auto;
+        float: left;
+        padding-bottom: 40px;
+    }
+}
+
+/*styling for upload button -option two. copy till here*/
