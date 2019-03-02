@@ -11,7 +11,7 @@ function displayCount() {
         //responsiveness
         if (window.innerWidth > 800) {
             prompt.style.marginLeft = "262px";
-        }else{
+        } else {
             prompt.style.marginLeft = "107px";
         }
     } else {
@@ -20,7 +20,7 @@ function displayCount() {
         //responsiveness
         if (window.innerWidth > 800) {
             prompt.style.marginLeft = "262px";
-        }else{
+        } else {
             prompt.style.marginLeft = "107px";
         }
     }
@@ -30,7 +30,37 @@ function displayCount() {
 
 ///second upload function  - option two
 function uploadNum(num) {
-    prompt = document.getElementsByClassName(num + "upload");
-    prompt[0].innerHTML = "1 File Selected";
-    prompt[0].style.color = "#d89b4e";
+    var prompt = document.getElementsByClassName(num + "upload");
+    //prompt[0].innerHTML = "1 File Selected";
+    //prompt[0].style.color = "#d89b4e";
+
+    //get the upload container
+    var uploadBtn = document.getElementsByClassName(num + "uploadBtn");
+
+    var BackgrounDisplay = document.getElementsByClassName("uploadBtn");
+
+    //get the uploaded image and display it as the background image
+    var image = uploadBtn[0].files[0];
+    var objectUrl = URL.createObjectURL(image);
+    BackgrounDisplay[num-1].style.backgroundImage = "url(" + objectUrl + ")";
+    BackgrounDisplay[num-1].style.backgroundSize = "cover";
+    BackgrounDisplay[num-1].style.border = "0";
+
+
+    //get the cancel icon and display it
+    var cancelIcons = document.getElementsByClassName("far fa-times-circle");
+    cancelIcons[num-1].style.display = "block";
+    
+}
+
+function removeImage(num){
+    //get the uploaded image and remove it as the background image
+    var BackgrounDisplay = document.getElementsByClassName("uploadBtn");
+    BackgrounDisplay[num-1].style.backgroundImage = "unset";
+    BackgrounDisplay[num-1].style.backgroundSize = "unset";
+    BackgrounDisplay[num-1].style.border = "3px dotted rgba(179, 179, 179, 0.1411764705882353)";
+
+        //get the cancel icon and hide it
+        var cancelIcons = document.getElementsByClassName("far fa-times-circle");
+        cancelIcons[num-1].style.display = "none";
 }
