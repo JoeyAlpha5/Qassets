@@ -390,7 +390,8 @@ span.footer2Copyright {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.04);
 }
 
-#fascilityTabImg, #fascilityTabImg2 {
+#fascilityTabImg,
+#fascilityTabImg2 {
     width: 200px;
     height: 200px;
     background: url(../images/store-832188__340.jpg);
@@ -398,7 +399,7 @@ span.footer2Copyright {
     float: left;
 }
 
-#fascilityTabImg2{
+#fascilityTabImg2 {
     background: url(../images/gkg-headshot.jpg);
 }
 
@@ -464,31 +465,32 @@ span.footer2Copyright {
     }
 
     #fascilityTabImg,
+    #fascilityTabImg2,
     #fascilityTabDesc,
     #fascilityTabIcons {
         float: unset;
     }
 
-    #fascilityTabIcons{
+    #fascilityTabIcons {
         width: auto;
         height: 64px;
     }
 
-    #fascilityTabIcon{
+    #fascilityTabIcon {
         float: left;
         margin-left: 15px;
         margin-top: 30px;
     }
 
-    #fascilityTabIcons br{
+    #fascilityTabIcons br {
         display: none;
     }
 
-    #tabLayout #fascilityTab{
+    #tabLayout #fascilityTab {
         margin-left: 0px;
     }
 
-    #fascilityTabImg{
+    #fascilityTabImg {
         margin-left: 15px;
         margin-top: 15px;
     }
