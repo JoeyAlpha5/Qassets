@@ -288,8 +288,8 @@ i.far.fa-times-circle {
     display: none;
 }
 
-@media (max-width:800px){
-    .uploadContOption2{
+@media (max-width:800px) {
+    .uploadContOption2 {
         width: auto;
         height: auto;
         float: left;
@@ -301,7 +301,7 @@ i.far.fa-times-circle {
 
 
 /* Styling for the second footer option 2, starts here */
-#footerDesign2{
+#footerDesign2 {
     width: 100%;
     height: 100px;
     background: #212121;
@@ -310,16 +310,16 @@ i.far.fa-times-circle {
 }
 
 
-#footerDesign2 #container{
+#footerDesign2 #container {
     width: 1100px;
 }
 
 
-.footer2Text{
+.footer2Text {
     margin-left: 0px;
 }
 
-#footerDesign2 p{
+#footerDesign2 p {
     font-size: 14px;
 }
 
@@ -327,16 +327,16 @@ i.far.fa-times-circle {
     margin-left: 15px;
 }
 
-.footerLinks:hover{
+.footerLinks:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.footerHomeLink{
+.footerHomeLink {
     margin-left: 0px;
 }
 
-.footerHomeLink:hover{
+.footerHomeLink:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -347,29 +347,151 @@ span.footer2Copyright {
     margin-right: 15px;
 }
 
-.mobileBreak{
+.mobileBreak {
     display: none;
 }
 
 @media (max-width:1100px) {
 
-    .mobileBreak{
+    .mobileBreak {
         display: block;
     }
 
-    #footerDesign2{
+    #footerDesign2 {
         height: auto;
         padding-bottom: 10px;
     }
 
-    #footerDesign2 #container{
+    #footerDesign2 #container {
         width: 100%;
     }
 
-    #footerDesign2 .footerCopyright{
+    #footerDesign2 .footerCopyright {
         float: none;
     }
 }
+
 /* Styling for the second footer ends here */
 
 
+#tabLayout #fascilityTab {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+
+/*fascilityTab and freelancer tab styling start here*/
+
+#fascilityTab {
+    width: 700px;
+    height: 200px;
+    background: white;
+    /* border-radius: 10px; */
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+#fascilityTabImg, #fascilityTabImg2 {
+    width: 200px;
+    height: 200px;
+    background: url(../images/store-832188__340.jpg);
+    background-size: cover;
+    float: left;
+}
+
+#fascilityTabImg2{
+    background: url(../images/gkg-headshot.jpg);
+}
+
+#fascilityTabDesc {
+    float: left;
+    margin-left: 15px;
+}
+
+#fascilityTabDesc h3 {
+    font-weight: lighter;
+    margin-top: 0px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+}
+
+#fascilityTabDesc p {
+    margin-left: 0px;
+}
+
+#fascilityTabDesc p {
+    margin-left: 0px;
+    width: 345px;
+    margin-top: 3px;
+    font-size: 12px;
+    color: black;
+}
+
+#fascilityTabData {
+    font-size: 12px;
+    margin-top: 8px;
+    color: gray;
+}
+
+#fascilityTabData i {
+    color: #4FC391;
+    margin-right: 15px;
+}
+
+#fascilityTabIcons {
+    float: right;
+    width: 73px;
+    height: 200px;
+    border-left: 1px solid rgba(128, 128, 128, 0.14);
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+#fascilityTabIcons i {
+    font-size: 18px;
+    cursor: pointer;
+    color: gray;
+}
+
+#fascilityTabIcons i:hover {
+    color: #4FC391;
+}
+
+
+@media (max-width:1000px) {
+    #fascilityTab {
+        width: 100%;
+        height: auto;
+    }
+
+    #fascilityTabImg,
+    #fascilityTabDesc,
+    #fascilityTabIcons {
+        float: unset;
+    }
+
+    #fascilityTabIcons{
+        width: auto;
+        height: 64px;
+    }
+
+    #fascilityTabIcon{
+        float: left;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    #fascilityTabIcons br{
+        display: none;
+    }
+
+    #tabLayout #fascilityTab{
+        margin-left: 0px;
+    }
+
+    #fascilityTabImg{
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+}
+
+/*fascilityTab styling end here*/
