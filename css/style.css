@@ -650,6 +650,10 @@ div#textInputSection button {
         width: 200px;
         margin-top: 97px;
     }
+
+    #div#textInputSection input{
+        width: 182px;
+    }
 }
 
 /*chat tab UI ends here*/
